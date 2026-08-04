@@ -1,6 +1,4 @@
-import torch
-import torchvision
-from torchvision.transforms import v2
+import uvicorn
 
-if (__name__ == "__main__"):
-    pass
+if __name__ == "__main__":
+    uvicorn.run("_api:app", host="127.0.0.1", port=8000, reload=True)

@@ -1,0 +1,20 @@
+[project]
+name = "machine-learning"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "SamNx",email = "73126296+sam-nx@users.noreply.github.com"}
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torchvision (>=0.28.0,<0.29.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "pillow (>=12.3.0,<13.0.0)",
+    "uvicorn (>=0.52.1,<0.53.0)",
+    "python-socketio (>=5.16.3,<6.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
