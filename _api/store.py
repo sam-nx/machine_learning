@@ -1,2 +1,2 @@
 t_players = {}
-cells = {}
+t_cells = {}
