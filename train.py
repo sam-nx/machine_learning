@@ -39,7 +39,8 @@ def main():
     print(f"{num_classes} classes")
     n_start_time = time.time()
 
-    model = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
+    model = models.efficientnet_v2_m(
+        weights=models.EfficientNet_V2_M_Weights.IMAGENET1K_V2)
 
     for param in model.parameters():
         param.requires_grad = False
